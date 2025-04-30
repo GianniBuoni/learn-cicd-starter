@@ -1,10 +1,13 @@
 # learn-cicd-starter (Notely)
 
-This repo contains the starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
+![ci-test-workflows-badge](https://github.com/GianniBuoni/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+
+This repo contains the starter code for the "Notely" application for the "Learn CICD"
+course on [Boot.dev](https://boot.dev).
 
 ## Local Development
 
-Make sure you're on Go version 1.22+.
+Make sure you're on Go version 1.22+. Or use the included devenv file to enter a development shell!
 
 Create a `.env` file in the root of the project with the following contents:
 
@@ -15,9 +18,10 @@ PORT="8080"
 Run the server:
 
 ```bash
-go build -o notely && ./notely
+just run
 ```
 
-*This starts the server in non-database mode.* It will serve a simple webpage at `http://localhost:8080`.
+_This starts the server in non-database mode._ It will serve a simple webpage
+at `http://localhost:8080`.
 
-You do *not* need to set up a database or any interactivity on the webpage yet. Instructions for that will come later in the course!
+GianniBuoni's version of Boot.dev's Notely app
