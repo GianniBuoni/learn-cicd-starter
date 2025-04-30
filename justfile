@@ -9,3 +9,6 @@ test:
 
 lint:
   staticcheck ./...
+
+sec:
+  gosec ./...
