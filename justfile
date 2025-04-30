@@ -3,4 +3,4 @@ run:
   go build -o notely && ./notely
 
 test:
-  go test ./...
+  go test ./... -cover
