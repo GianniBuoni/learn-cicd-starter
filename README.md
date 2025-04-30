@@ -1,5 +1,7 @@
 # learn-cicd-starter (Notely)
 
+![ci-test-workflows-badge](https://github.com/GianniBuoni/learn-cicd-starter/actions/workflows/ci.yml/badge.svg)
+
 This repo contains the starter code for the "Notely" application for the "Learn CICD"
 course on [Boot.dev](https://boot.dev).
 
@@ -22,4 +24,4 @@ just run
 _This starts the server in non-database mode._ It will serve a simple webpage
 at `http://localhost:8080`.
 
-BuonGian's version of Boot.dev's Notely app
+GianniBuoni's version of Boot.dev's Notely app
