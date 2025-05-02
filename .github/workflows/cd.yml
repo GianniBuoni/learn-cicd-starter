@@ -31,3 +31,6 @@ jobs:
 
       - name: Submit build
         run: gcloud builds submit --tag us-east4-docker.pkg.dev/storied-chimera-458614-t8/notely-ar-repo/notely:latest .
+
+      - name: Deploy to Cloud Run
+        run: gcloud run deploy notely --image us-east4-docker.pkg.dev/storied-chimera-458614-t8/notely-ar-repo/notely:latest --region us-east4 --allow-unauthenticated --project storied-chimera-458614-t8 --max-instances=4
