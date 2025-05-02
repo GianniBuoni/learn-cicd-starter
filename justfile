@@ -1,3 +1,5 @@
+db_url:= env('DATABASE_URL')
+
 run:
   go fmt
   just lint
@@ -19,3 +21,7 @@ lint:
 
 sec:
   gosec ./...
+
+[working-directory: 'sql/schema']
+migrate:
+  goose turso {{db_url}} up
